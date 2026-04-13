@@ -721,7 +721,7 @@ ${q}`;try{let X=!!G8?.STMemoryBooks?.moduleSettings?.useRegex,B=G8?.STMemoryBook
                 <h4 data-i18n="STMemoryBooks_AutoSummaryInterval">Auto-Summary Interval:</h4>
                 <small class="opacity50p" data-i18n="STMemoryBooks_AutoSummaryIntervalDesc">Number of messages after which to automatically create a memory summary.</small>
                 <input type="number" id="stmb-auto-summary-interval" class="text_pole"
-                    value="{{autoSummaryInterval}}" min="10" max="200" step="1"
+                    value="{{autoSummaryInterval}}" min="1" max="200" step="1"
                     placeholder="50">
             </label>
         </div>
