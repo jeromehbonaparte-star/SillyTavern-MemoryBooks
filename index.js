@@ -1244,7 +1244,7 @@ function validateSettings(settings) {
   }
   if (
     settings.moduleSettings.autoSummaryInterval === undefined ||
-    settings.moduleSettings.autoSummaryInterval < 10
+    settings.moduleSettings.autoSummaryInterval < 1
   ) {
     settings.moduleSettings.autoSummaryInterval = 100;
   }
@@ -5341,7 +5341,7 @@ function setupSettingsEventListeners() {
 
     if (e.target.matches("#stmb-auto-summary-interval")) {
       const value = parseInt(e.target.value);
-      if (!isNaN(value) && value >= 10 && value <= 200) {
+      if (!isNaN(value) && value >= 1 && value <= 200) {
         settings.moduleSettings.autoSummaryInterval = value;
         saveSettingsDebounced();
       }
